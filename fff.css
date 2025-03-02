@@ -1,0 +1,31 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(124, 190, 146);
+  
+    overflow-y: scroll;
+  }
+  
+  .box1 {
+    margin-top: 15px;
+    min-width: 100px;
+    max-width: 100%;
+  
+    min-height: 100px;
+    max-height: 250px;
+    background-color: rgb(31, 180, 160);
+    overflow-y: auto;
+    /* Borders to all sides*/
+  
+    border-color: rgb(58, 0, 128);
+    border-width: 10px;
+    border-style: ridge;
+    
+  
+  
+    /* Box Model */
+    padding-top: 50px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }

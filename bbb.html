@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cocunter with greeting</title>
+    <style>
+     /*css */
+     body{
+        background:  linear-gradient(90deg, rgba(2,0,36,1) 0%,
+         rgba(9,121,114,1)
+         35%, rgba(0,212,255,1) 100%);
+     }
+
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+counter{
+font-size: 24px;
+margin: 20px;
+}
+button{
+font-size: 18px;
+padding: 10px 20px;
+margin: 5px;
+cursor: pointer;
+}
+</style>
+</head>
+<body>
+    <h1>Welcome to my page</h1>
+    <p id="message"></p>
+    <!--paragraph to display the greeting-->
+    <span class="counter" id="counter">0</span>
+<br>
+<button onclick="increment()">increment</button>
+<button onclic="decrement()">Decrement</button>
+
+<script>
+    //update greeting message
+    let greeting ="Hello World!";
+    document.getElementById("message").innerText = greeting;
+    //counter logic 
+    let count = 0;
+    
+    function updateCounter(){
+        document.getElementById("counter").innerText = count;
+    }
+     function increment(){
+        count++;
+        updateCounter();
+     }
+     function decrement(){
+        count--;
+        updateCounter();
+     }
+</script>
+</body>
+</html>

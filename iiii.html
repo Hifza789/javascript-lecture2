@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body{
+        background-color: bisque;
+      }
+      /* how to make the buttons bigger and change the colour of
+       the buttons */
+    </style>
+  </head>
+  <body>
+    <form onsubmit="saveData(); return false;">
+      <div>
+        <label for="name">Name*:</label>
+        <input type="text" name="name" id="name" />
+      </div>
+
+      <div>
+        <label for="password">password*:</label>
+        <input type="password" name="password" id="password" />
+      </div>
+      <button type="submit">submit</button>
+      <button onclick="sayHello()">sayHello</button>
+    </form>
+
+    <script src="./city.js"></script>
+  </body>
+</html>
